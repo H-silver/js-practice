@@ -6,6 +6,54 @@
    <title>Document</title>
 </head>
 <body>
-   
+   <script>
+      // 9-7
+      var num=10;
+      document.write("num 변수 : " + typeof num + " 타입<p/>");
+      document.write("--- 데이터 값 변경 후 ---<p/>");
+      var num="홍길동";
+      document.write("num 변수 : " + typeof num + " 타입<p/>");
+
+      // 9-8
+      //var 키워드 생략가능, 변수명을 재선언 해도 저장된 데이터가 없어지지 않는다.
+      stdName="홍길동"; 
+      comGrade=96;
+      var stdName;
+      var comGrade;
+      document.write("학생 이름 : " + stdName + "<br>");
+      document.write("컴퓨터 점수 :" + comGrade + "<br>");
+      
+      //9-9
+      // function getGrade() {
+      //    var kor=95;
+      // }
+      // var kor=100;
+      // getGrade();
+      // document.write("9-9 : " + kor + "<br>");
+
+      //9-10
+      // function getGrade() {
+      //    kor=95;
+      // }
+      // var kor=100;
+      // getGrade();
+      // document.write("9-10 :" +kor + "<br>")
+
+      // 9-11
+      // function getGrade() {
+      //    var kor=95;
+      // }
+      // getGrade();
+      // document.write("지역변수 값은 함수외부에서 사용 불가.<br>");
+      // document.write("9-11 : " + kor + "<br>");
+
+      // 9-12
+      function getGrade() {
+         var kor=95;
+         // return kor;
+      }
+      getKor=getGrade();
+      document.write("9-12 : " + getKor + "<br>");
+   </script>
 </body>
 </html>
